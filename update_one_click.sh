@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/w3servicesdotnet/update-login-page-cp/mas
 
 chmod +x page_update.sh
 
-echo "*/30 * * * * root sh $UPDATE_DIR/page_update.sh > /dev/null" >> /etc/crontab
+echo "*/30 * * * * root sh /W3SERVICES_SCRIPT/UPDATEME/page_update.sh > /dev/null" >> /etc/crontab
 
 
 rm -rf $UPDATE_DIR/update_one_click.sh
